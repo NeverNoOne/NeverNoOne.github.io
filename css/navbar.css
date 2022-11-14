@@ -1,0 +1,12 @@
+@keyframes example {
+    0%{background-color: transparent;}
+    25%{background-color: blueviolet;}
+    50%{background-color: hotpink;}
+    75%{background-color: blueviolet;}
+    100%{background-color: transparent;}
+}
+.animation-test{
+animation-name:example;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
