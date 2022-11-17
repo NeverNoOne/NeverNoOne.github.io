@@ -1,12 +1,36 @@
 @keyframes example {
-    0%{background-color: transparent;}
-    25%{background-color: blueviolet;}
-    50%{background-color: hotpink;}
-    75%{background-color: blueviolet;}
-    100%{background-color: transparent;}
+    0%{opacity: 0;}
+    25%{opacity: 0.25;}
+    50%{opacity: 0.5;}
+    75%{opacity: 0.75;}
+    100%{opacity: 1;}
 }
-.animation-test{
+.animation-Fade-In{
 animation-name:example;
 animation-duration: 4s;
 animation-iteration-count: infinite;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0, .025);
+	}
+	50% {
+		transform: scale(1, .025);
+	}
+}
+    .square {
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .square {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+  }
+}
+
+.square-transition {
+    opacity: 1;
+    transform: none;
 }
