@@ -1,0 +1,62 @@
+@keyframes test{
+    0% {transform: rotate(0deg);}
+
+    100% {transform: rotate(360deg);}
+}
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: rgb(11, 0, 26);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: xx-large;
+    color: whitesmoke;
+}
+
+p{
+    color: whitesmoke;
+}
+
+input{
+    color: whitesmoke;
+    padding: 6px 12px;    
+    width: 80%;
+    border: 3px solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    background-color: rgb(11, 0, 26);
+    position: relative;
+    
+}
+
+input:focus{
+    border: 3px solid #ccc;
+}
+
+.border-animated{
+    border-radius: 5%;
+    border: 5px solid rgb(24, 0, 118);
+    box-shadow: 0px 0px 20px rgb(24, 0, 118);
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.div-center{
+    position: relative;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    height: 50%;
+    background-color: rgb(26, 0, 63);
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
