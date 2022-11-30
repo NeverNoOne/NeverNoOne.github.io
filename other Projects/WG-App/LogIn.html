@@ -1,14 +1,18 @@
 <link rel="stylesheet" href="css/_style.css">
+<script src="js/LogIn.js"></script>
 
 <body>
     <div class="div-center border-animated">
-        <div style="position: relative; top: 10%;">
-            <!--<p style="position: relative; left: -20%;">Username</p>-->
-            <input type="text" placeholder="Username">
-        </div>
         <div style="position: relative; top: 20%;">
+            <!--<p style="position: relative; left: -20%;">Username</p>-->
+            <input id="User" type="text" placeholder="Username">
+        </div>
+        <div style="position: relative; top: 40%;">
             <!--<p style="position: relative; left: -20%;">Password</p>-->
-            <input type="password" placeholder="Password">
+            <input id="Password" type="password" placeholder="Password">
+        </div>
+        <div style="position: relative; top: 60%;">
+            <button type="button" onclick="Submit()" class="Button-LogIn">Sign In</button>
         </div>
     </div>
 </body>
