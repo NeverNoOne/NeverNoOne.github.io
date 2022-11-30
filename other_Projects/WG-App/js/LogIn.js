@@ -36,6 +36,9 @@ function Submit()
         console.log(PasswordIndex);
         console.log(UserIndex);
         console.log("Access granted");
+        var URL = window.location.toString().replace("LogIn.html", "Dashboard.html");
+        console.log(URL);
+        window.location.replace(URL);
     }
     else{
         InputUserField.style.borderColor = "red";
