@@ -2,6 +2,16 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+section{
+    float: left;
+}
+
+aside{
+    height: 95%;
+    float: right;
+    border-left: 2px solid #555;
+}
+
 body{
     background-color: rgb(11, 0, 26);
 }
@@ -71,4 +81,22 @@ input:focus{
 
 .text-center{
     text-align: center;
+}
+
+.header{
+    height: 5%;
+}
+
+.p-header-bold{
+    font-size: large;
+    font-weight: bolder;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.body{
+    position: relative;
+    left: 5%;
+    width: 90%;
 }

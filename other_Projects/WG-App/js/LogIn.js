@@ -38,7 +38,8 @@ function Submit()
         console.log("Access granted");
         var URL = window.location.toString().replace("LogIn.html", "Dashboard.html");
         console.log(URL);
-        window.location.replace(URL);
+        localStorage.setItem("User", User);
+        window.location.href = URL;
     }
     else{
         InputUserField.style.borderColor = "red";
