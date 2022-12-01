@@ -50,3 +50,9 @@ function Submit()
 
 const A_Usernames = ["Bao", "Hieu", "Max"]
 const A_Passwords = [123, 456, 789]
+
+window.addEventListener("keypress", function(e){
+    if(e.key == "Enter"){
+        Submit();
+    }
+})
